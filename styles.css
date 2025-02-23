@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    line-height: 1.6;
+    color: #767676;
+    padding: 2rem;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit; /* This will make the link inherit the color of its parent element */
+}
+
+a:visited {
+    color: inherit; /* Ensure visited links remain the same color */
+}
+
+a:focus {
+    outline: 2px dashed #000; /* Ensure focus is visible */
+}
+
+.container {
+    max-width: 600px;
+    padding-top: 8%;
+    margin: 0 auto;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.profile-header p {
+    font-size: 20px;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.profile-title h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+    color: #1E1E21;
+    font-weight: 400;
+}
+
+.profile-title p {
+    color: #666;
+}
+
+.bio {
+    margin-bottom: 2.5rem;
+    color: #767676;
+    font-size: 16px;
+}
+
+.section {
+    margin-bottom: 2.5rem;
+}
+
+.section-title {
+    font-size: .9rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.case-study, .content-item {
+    display: flex;
+    align-items: flex-start;
+    gap: .65rem;
+    margin-bottom: 1rem;
+}
+
+.icon-img {
+    max-width: 20px;
+    max-height: 24px;
+    height: auto;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+#apple-icon {
+    margin-top: -2px;
+}
+
+.content-title {
+    font-weight: 400;
+    color: #767676;
+}
+
+.content-description {
+    color: #1E1E21;
+    font-weight: 600;
+}
+
+.empty-section {
+    height: 100px;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+@media (max-width: 640px) {
+    body {
+        padding: 1rem;
+    }
+
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .case-study, .content-item {
+        align-items: flex-start;
+    }
+}
