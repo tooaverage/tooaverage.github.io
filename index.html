@@ -3,126 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaycee Day - Profile</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Jaycee Day - Staff Product Designer</title>
+    <link rel="icon" href="assets/FlowerJay.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">    <link rel="stylesheet" href="styles.css">
+    <style>
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            color: inherit; /* This will make the link inherit the color of its parent element */
+        }
+        a:focus {
+            outline: 2px dashed #000; /* Ensure focus is visible */
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <header class="profile-header">
-            <img src="assets/FlowerJay.png" alt="Profile" class="profile-image">
+            <img src="assets/FlowerJay.png" alt="Profile picture of Jaycee Day" class="profile-image">
             <div class="profile-title">
                 <h1>Hey, I'm <strong>Jaycee Day</strong></h1>
                 <p>Staff Product Designer at GitHub</p>
             </div>
         </header>
 
-        <p class="bio">
-            Hi, I'm Jaycee! I'm a seasoned designer with 11+ years experience and I take an 
-            approach that solves problems for users while creating value for the business at 
-            the same time through design.
-        </p>
+        <main>
+            <p class="bio">
+                Hi, I'm Jaycee! As a designer with 11+ years experience, I love crafting solutions that benefit the user and the business. 
+                I get excited about growth, designing end to end solutions, and working on strategy. 
+            </p>
 
-        <section class="section">
-            <h2 class="section-title">Case studies</h2>
-            <div class="case-study">
-                <img src="assets/github-icon.png" alt="GitHub Icon" class="icon-img">
-                <div>
-                    <p class="content-title">GitHub</p>
-                    <p class="content-description">(Case study on Enterprise and Copilot coming soon)</p>
+            <section class="section">
+                <h2 class="section-title">Case studies</h2>
+                <div class="case-study">
+                    <img src="assets/github-icon.png" alt="GitHub Icon" class="icon-img">
+                    <div>
+                        <p class="content-title">GitHub</p>
+                        <p class="content-description">(Case study on Enterprise and Copilot coming soon)</p>
+                    </div>
                 </div>
-            </div>
-            <div class="case-study">
-                <img src="assets/blinkist-icon.png" alt="GitHub Icon" class="icon-img">
-                <div>
-                    <p class="content-title">Blinkist</p>
-                    <p class="content-description">How Solving Our Biggest Customer Complaint at Blinkist Led to a 23% Increase in Conversion</p>
+                <div class="case-study">
+                    <a href="https://medium.com/ux-planet/how-solving-our-biggest-customer-complaint-at-blinkist-led-to-a-23-increase-in-conversion-b60ad514134b?sk=c97da11b8a276d98769212dc41462e6a" target="_blank" aria-label="Blinkist case study">
+                        <img src="assets/blinkist-icon.png" alt="Blinkist Icon" class="icon-img">
+                    </a>
+                    <div>
+                        <p class="content-title"><a href="https://medium.com/ux-planet/how-solving-our-biggest-customer-complaint-at-blinkist-led-to-a-23-increase-in-conversion-b60ad514134b?sk=c97da11b8a276d98769212dc41462e6a" target="_blank">Blinkist</a></p>
+                        <p class="content-description"><a href="https://medium.com/ux-planet/how-solving-our-biggest-customer-complaint-at-blinkist-led-to-a-23-increase-in-conversion-b60ad514134b?sk=c97da11b8a276d98769212dc41462e6a" target="_blank">How Solving Our Biggest Customer Complaint at Blinkist Led to a 23% Increase in Conversion</a></p>
+                    </div>
                 </div>
-            </div>
-            <div class="case-study">
-                <img src="assets/zalando-icon.png" alt="GitHub Icon" class="icon-img">
-                <div>
-                    <p class="content-title">Zalando</p>
-                    <p class="content-description">How we got a 98% success rate for our AI Assistant for Zalando</p>
+                <div class="case-study">
+                    <a href="https://chatbotsmagazine.com/how-we-got-a-98-success-rate-for-our-bot-for-zalando-a-ux-case-study-fcdc0e70469d" target="_blank" aria-label="Zalando case study">
+                        <img src="assets/zalando-icon.png" alt="Zalando Icon" class="icon-img">
+                    </a>
+                    <div>
+                        <p class="content-title"><a href="https://chatbotsmagazine.com/how-we-got-a-98-success-rate-for-our-bot-for-zalando-a-ux-case-study-fcdc0e70469d" target="_blank">Zalando</a></p>
+                        <p class="content-description"><a href="https://chatbotsmagazine.com/how-we-got-a-98-success-rate-for-our-bot-for-zalando-a-ux-case-study-fcdc0e70469d" target="_blank">How we got a 98% Success Rate for our AI Assistant for Zalando</a></p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="section">
-            <h2 class="section-title">Speaking and Podcasts</h2>
-            <div class="content-item">
-                <img src="assets/figma-icon.png" alt="GitHub Icon" class="icon-img">
-                <div>
-                    <p class="content-title">Figma Config Conference</p>
-                    <p class="content-description">Transparency Always Wins: How Ethical Design Led to 23% Growth</p>
+            <section class="section">
+                <h2 class="section-title">Speaking and Podcasts</h2>
+                <div class="content-item">
+                    <a href="https://www.youtube.com/watch?v=mDPrFM3439s" target="_blank" aria-label="Figma Config Conference">
+                        <img src="assets/figma-icon.png" alt="Figma Icon" class="icon-img">
+                    </a>
+                    <div>
+                        <p class="content-title"><a href="https://www.youtube.com/watch?v=mDPrFM3439s" target="_blank">Figma Config Conference</a></p>
+                        <p class="content-description"><a href="https://www.youtube.com/watch?v=mDPrFM3439s" target="_blank">Transparency Always Wins: How Ethical Design Led to 23% Growth</a></p>
+                    </div>
                 </div>
-            </div>
-            <div class="content-item">
-                <img src="assets/shipped-icon.png" alt="GitHub Icon" class="icon-img">
-                <div>
-                    <p class="content-title">It Shipped That Way Podcast</p>
-                    <p class="content-description">Making Billions with Ethical Onboarding</p>
+                <div class="content-item">
+                    <a href="https://www.itshipped.fm/episodes/5" target="_blank" aria-label="It Shipped That Way Podcast">
+                        <img src="assets/shipped-icon.png" alt="It Shipped That Way Icon" class="icon-img">
+                    </a>
+                    <div>
+                        <p class="content-title"><a href="https://www.itshipped.fm/episodes/5" target="_blank">It Shipped That Way Podcast</a></p>
+                        <p class="content-description"><a href="https://www.itshipped.fm/episodes/5" target="_blank">Making Billions with Ethical Onboarding</a></p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="section">
-            <h2 class="section-title">My subscription screen pattern ™</h2>
-            <div class="content-item">
-                <img src="assets/apple-icon.png" alt="GitHub Icon" class="icon-img" id="apple-icon">
-                <div>
-                    <p class="content-description"> Apple adopted my subscription screen design pattern</p>
+            <section class="section">
+                <h2 class="section-title">My subscription screen pattern ™</h2>
+                <div class="content-item">
+                    <a href="https://x.com/tooaverage/status/1531253612910981120" target="_blank" aria-label="Apple subscription screen pattern">
+                        <img src="assets/apple-icon.png" alt="Apple Icon" class="icon-img" id="apple-icon">
+                    </a>
+                    <div>
+                        <p class="content-title"><a href="https://x.com/tooaverage/status/1531253612910981120" target="_blank">Apple</a></p>
+                        <p class="content-description"><a href="https://x.com/tooaverage/status/1531253612910981120" target="_blank">Adopted my subscription screen pattern</a></p>
+                    </div>
                 </div>
-            </div>
-            <div class="content-item">
-                <img src="assets/google-icon.png" alt="GitHub Icon" class="icon-img">
-                <div>
-                    <p class="content-description">Google adopted my subscription screen pattern</p>
+                <div class="content-item">
+                    <a href="https://youtu.be/4OrzjJ4dTMw?si=qkrT1DFxOFqrAw6f&t=125" target="_blank" aria-label="Google subscription screen pattern">
+                        <img src="assets/google-icon.png" alt="Google Icon" class="icon-img">
+                    </a>
+                    <div>
+                        <p class="content-title"><a href="https://youtu.be/4OrzjJ4dTMw?si=qkrT1DFxOFqrAw6f&t=125" target="_blank">Google</a></p>
+                        <p class="content-description"><a href="https://youtu.be/4OrzjJ4dTMw?si=qkrT1DFxOFqrAw6f&t=125" target="_blank">Adopted my subscription screen pattern</a></p>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="section">
-            <h2 class="section-title">My side projects</h2>
-            <div class="content-item">
-                <img src="assets/apple-icon.png" alt="GitHub Icon" class="icon-img" id="apple-icon">
-                <div>
-                    <p class="content-description"> Apple adopted my subscription screen design pattern</p>
-                </div>
-            </div>
-            <div class="content-item">
-                <img src="assets/google-icon.png" alt="GitHub Icon" class="icon-img">
-                <div>
-                    <p class="content-description">Google adopted my subscription screen pattern</p>
-                </div>
-            </div>
-        </section>
-        <section class="section">
-            <h2 class="section-title">My side projects</h2>
-            <div class="content-item">
-                <img src="assets/apple-icon.png" alt="GitHub Icon" class="icon-img" id="apple-icon">
-                <div>
-                    <p class="content-description"> Apple adopted my subscription screen design pattern</p>
-                </div>
-            </div>
-            <div class="content-item">
-                <img src="assets/google-icon.png" alt="GitHub Icon" class="icon-img">
-                <div>
-                    <p class="content-description">Google adopted my subscription screen pattern</p>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="section">
-            <h2 class="section-title">Let's collab?</h2>
-            <div class="content-item">
-                <div>
-                    <p class="content-description">hi@jayceeday.com</p>
+            <section class="section">
+                <h2 class="section-title">My side projects</h2>
+                <div class="content-item">
+                    <div>
+                        <p class="content-description"><a href="https://www.figma.com/community/plugin/934505788375924322/count-things" target="_blank">Count Things Figma Plugin</a></p>
+                    </div>
                 </div>
-            </div>
-            <div class="content-item">
-                    <p class="content-description">LinkedIn</p>
+                <div class="content-item">
+                    <div>
+                        <p class="content-description"><a href="https://movingtovancouver.ca/" target="_blank">Moving to Vancouver</a></p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Writing</h2>
+                <div class="content-item">
+                    <div>
+                        <p class="content-description"><a href="https://medium.com/ux-planet/why-im-switching-from-figma-to-microsoft-paint-425a5d783bbf?sk=1d07cbdcb8a89ff6175d8c2614dd862f" target="_blank">Why I’m Switching from Figma to Microsoft Paint</a></p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <div>
+                        <p class="content-description"><a href="https://medium.com/theuxblog/the-powerful-fix-to-the-usability-testing-process-86e745a30b1a" target="_blank">The Powerful Fix to the Usability Testing Process</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Let's collab?</h2>
+                <div class="content-item">
+                    <div>
+                        <p class="content-description"><a href="mailto:hi@jayceeday.com">hi@jayceeday.com</a></p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <div>
+                        <p class="content-description"><a href="https://www.linkedin.com/in/jayceeannday/" target="_blank">LinkedIn</a></p>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
 </body>
 </html>

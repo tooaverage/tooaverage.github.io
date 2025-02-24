@@ -11,6 +11,20 @@ body {
     padding: 2rem;
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit; /* This will make the link inherit the color of its parent element */
+}
+
+a:visited {
+    color: inherit; /* Ensure visited links remain the same color */
+}
+
+a:focus {
+    outline: 2px dashed #000; /* Ensure focus is visible */
+}
+
 .container {
     max-width: 600px;
     padding-top: 8%;
@@ -28,7 +42,6 @@ body {
     font-size: 20px;
 }
 
-
 .profile-image {
     width: 120px;
     height: 120px;
@@ -39,7 +52,7 @@ body {
     font-size: 2rem;
     margin-bottom: 0;
     color: #1E1E21;
-    font-weight:400;
+    font-weight: 400;
 }
 
 .profile-title p {
@@ -75,7 +88,6 @@ body {
     height: auto;
     flex-shrink: 0;
     margin-top: 2px;
-
 }
 
 #apple-icon {
