@@ -76,7 +76,8 @@
 
 .playroom .project-bread { grid-template-rows:auto; align-items:center; }
 .playroom .project-bread .bread-copy { grid-column:1; grid-row:1; align-self:center; }
-.playroom .project-bread .media-frame { grid-column:2; grid-row:1; }
+.playroom .project-bread .media-frame { grid-column:2; grid-row:1; width:100%; max-width:440px; justify-self:center; }
+.playroom .project-bread .media-frame img { max-height:305px; object-fit:contain; }
 
 .dating-response[hidden] { display:none; }
 
