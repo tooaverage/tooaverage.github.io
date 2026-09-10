@@ -127,3 +127,9 @@
 .playroom .card-destination::after { content:none; }
 .playroom .linked-card { cursor:pointer; }
 .playroom .linked-card p { cursor:text; user-select:text; -webkit-user-select:text; }
+
+.playroom > .container { padding-top:2.5rem; }
+.playroom .past-role { background:#f4dce9; border-color:#dfbdd2; }
+.playroom .past-role h3 { color:#4e2d49; }
+.playroom .past-role .role-note { color:#75536f; }
+@media(max-width:640px) { .playroom > .container { padding-top:1.5rem; } }

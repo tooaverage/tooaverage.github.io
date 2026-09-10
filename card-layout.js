@@ -38,18 +38,23 @@ document.querySelectorAll('.playroom .linked-card').forEach(card => {
     if (isControl(event.target) || event.detail > 1 || window.getSelection()?.toString()) return;
     const newTab = event.metaKey || event.ctrlKey || event.shiftKey;
     if (newTab) {
+      window.dispatchEvent(new CustomEvent('portfolio:product-open', { detail: { destination } }));
       window.open(destination.href, '_blank', 'noopener,noreferrer');
       return;
     }
     // Allow double-click word selection as well as drag selection.
     pending = setTimeout(() => {
-      if (!window.getSelection()?.toString()) window.location.assign(destination.href);
+      if (!window.getSelection()?.toString()) {
+        window.dispatchEvent(new CustomEvent('portfolio:product-open', { detail: { destination } }));
+        window.location.assign(destination.href);
+      }
     }, 300);
   });
   card.addEventListener('dblclick', () => clearTimeout(pending));
   card.addEventListener('auxclick', event => {
     if (event.button !== 1 || isControl(event.target)) return;
     event.preventDefault();
+    window.dispatchEvent(new CustomEvent('portfolio:product-open', { detail: { destination } }));
     window.open(destination.href, '_blank', 'noopener,noreferrer');
   });
 });
