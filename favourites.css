@@ -1,0 +1,129 @@
+/* Keep the colour; give the products a calm, consistent frame. */
+.cards .product-list { align-items:start; }
+.cards .product-map { grid-row:auto; }
+.cards .product-map .project-visual { margin-top:1.25rem; padding-top:0; }
+.cards .project-visual video { display:block; width:100%; height:auto; aspect-ratio:auto; object-fit:contain; position:relative; z-index:3; }
+.next .media-frame video { width:100%; height:auto; aspect-ratio:auto; object-fit:contain; }
+.dance-visual { height:auto; aspect-ratio:auto; background:white; }
+.dance-visual img { display:block; width:100%; height:auto; object-fit:contain; }
+.project-dance .media-frame img { aspect-ratio:auto; height:auto; object-fit:contain; }
+.studio .stage { transform:none; font-size:.8rem; border-radius:.45rem; }
+.studio .stage-recap { background:#e5cbee; color:#63356d; }
+.studio .stage-dance { background:#f1b9ce; color:#792f4d; }
+.studio .linked-card { position:relative; isolation:isolate; }
+.studio .card-destination::after { content:''; position:absolute; inset:0; border-radius:inherit; z-index:2; }
+.studio .linked-card:focus-within { outline:2px solid #733b88; outline-offset:4px; }
+.studio .image-open, .studio video, .studio .demo-source { position:relative; z-index:3; }
+.studio .simple-description { color:#55455a; line-height:1.6; margin-top:1.2rem; }
+.studio .project-bread { grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr); }
+.studio .project-bread .simple-description { grid-column:1; grid-row:2; margin-top:0; align-self:start; }
+.studio .project-bread .media-frame img { aspect-ratio:auto; }
+@media(prefers-reduced-motion:reduce) { .playroom .project:hover, .playroom .project:focus-within { transform:none; } }
+
+.variation .profile-title h1 { font-size:clamp(1.8rem,3.6vw,2.6rem); line-height:1.15; }
+.variation .profile-title strong { display:inline; }
+.variation .headline-rest { display:block; font-weight:400; margin-top:.15em; }
+.labs-note { margin-top:.8rem; font-size:.95rem; color:var(--muted); line-height:1.5; }
+
+/* Restore the original tilted stickers in Pink playground. */
+.playroom .stage { transform:rotate(-2deg); }
+.playroom .stage-recap, .playroom .stage-dance, .playroom .stage-agents { transform:rotate(2deg); }
+.playroom .stage-map { transform:rotate(-1deg); }
+
+/* Content-sized rows keep the next card close to the one above it. */
+.cards .packed-cards, .next .packed-cards { grid-auto-rows:1px; row-gap:0; align-items:start; }
+.playroom .packed-cards .project:nth-child(even) { margin-top:0; }
+
+/* Keep the featured card's heading and copy together beside its tall image. */
+.playroom .project-bread, .studio .project-bread, .cards .product-bread {
+  grid-template-rows: min-content minmax(0, 1fr);
+}
+.cards .product-bread > p { align-self:start; }
+
+/* One shared left edge from the introduction through the older work. */
+.playroom .profile-header {
+  max-width:none;
+  margin-left:0;
+  margin-right:0;
+  flex-direction:row;
+  justify-content:space-between;
+  text-align:left;
+}
+.playroom .profile-title { flex:1; min-width:0; }
+.playroom .profile-image { flex-shrink:0; }
+.playroom .bio { margin-left:0; margin-right:0; }
+.playroom main > .section:not(.products) {
+  max-width:760px;
+  margin-left:0;
+  margin-right:0;
+}
+.playroom .project-list { padding:0; }
+.playroom .variation-nav { max-width:1140px; margin-left:auto; margin-right:auto; justify-content:flex-start; }
+
+.playroom .dating-vote-card { border-style:solid; border-color:#d8b2d9; background:#fbeefa; }
+.dating-actions { display:flex; justify-content:center; gap:1.3rem; margin-top:1.6rem; }
+.dating-actions button { display:flex; align-items:center; gap:.55rem; border:1px solid #dbc9dc; border-radius:3rem; padding:.7rem 1.2rem; background:#fffafb; color:#744574; font:550 .95rem 'Bricolage Grotesque',sans-serif; cursor:pointer; min-height:48px; transition:background .2s,transform .2s; }
+.dating-actions svg { width:23px; height:23px; fill:none; stroke:currentColor; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+.dating-actions .dating-like { color:#a93268; border-color:#e8b9ce; }
+.dating-actions button:hover { transform:translateY(-2px); background:#f1e1f3; }
+.dating-actions .dating-like:hover, .dating-actions .dating-like[aria-pressed=true] { background:#f6cce0; }
+.dating-like[aria-pressed=true] svg { fill:currentColor; }
+.dating-pass[aria-pressed=true] { background:#e7d9ed; }
+.dating-response { min-height:2.5rem; display:flex; align-items:center; justify-content:center; gap:.8rem; margin-top:.8rem; }
+.dating-response p { margin:0; font-size:.875rem; color:#795a78; }
+.dating-reset { padding:.4rem; border:0; background:none; color:#713c78; font:inherit; font-size:.875rem; text-decoration:underline; text-underline-offset:3px; cursor:pointer; }
+@media(prefers-reduced-motion:reduce) { .dating-actions button:hover { transform:none; } }
+
+.playroom .project-bread { grid-template-rows:auto; align-items:center; }
+.playroom .project-bread .bread-copy { grid-column:1; grid-row:1; align-self:center; }
+.playroom .project-bread .media-frame { grid-column:2; grid-row:1; }
+
+.dating-response[hidden] { display:none; }
+
+/* Let white-backed legacy logos blend into the pastel page. */
+.playroom .case-study .icon-img,
+.playroom .content-item .icon-img,
+.playroom .past-role > img {
+  mix-blend-mode:multiply;
+}
+
+.playroom .past-role { background:#dfeaf3; border:1px solid #c6d9e7; }
+.playroom .past-role h3 { color:#243f54; }
+.playroom .past-role .role-note { color:#4a6173; }
+.playroom .past-role .experience-cta {
+  display:inline-flex; align-items:center; gap:.65rem;
+  margin-top:1.15rem; padding:.65rem 1rem;
+  background:#294b65; color:#fff; border-radius:.55rem;
+  font-size:.95rem; font-weight:550; line-height:1.5;
+  text-decoration:none; min-height:44px;
+}
+.playroom .past-role .experience-cta:hover { background:#1e3a50; }
+.playroom .past-role .experience-cta:focus-visible { outline:3px solid #294b65; outline-offset:4px; }
+
+.playroom .product-cta { display:flex; align-items:center; flex-wrap:wrap; gap:.8rem 1rem; margin-top:1.5rem; }
+.playroom .intro-links .try-product {
+  display:inline-flex; align-items:center; gap:.75rem;
+  background:#703579; color:#fff; border:1px solid #703579;
+  border-radius:.65rem; padding:.8rem 1.2rem;
+  min-height:48px; text-decoration:none; font-weight:600;
+}
+.playroom .intro-links .try-product:hover { background:#592760; border-color:#592760; }
+.playroom .intro-links .try-product:focus-visible { outline:3px solid #703579; outline-offset:4px; }
+.playroom .cta-context { font-size:.875rem; color:#67536b; }
+
+/* Centre the reading sections around the wider project collection. */
+.playroom .profile-header { max-width:800px; margin-left:auto; margin-right:auto; }
+.playroom .bio { max-width:800px; margin-left:auto; margin-right:auto; }
+.playroom main > .section:not(.products) { max-width:800px; margin-left:auto; margin-right:auto; }
+.playroom .variation-nav { justify-content:center; }
+
+.skip-link { position:absolute; left:1rem; top:0; transform:translateY(-150%); z-index:10; background:white; color:#37233f; padding:.6rem 1rem; border-radius:.5rem; }
+.skip-link:focus { transform:translateY(.5rem); }
+
+@media(max-width:640px) {
+  .playroom .project-bread .media-frame { margin-top:1rem; }
+}
+
+.playroom .card-destination::after { content:none; }
+.playroom .linked-card { cursor:pointer; }
+.playroom .linked-card p { cursor:text; user-select:text; -webkit-user-select:text; }

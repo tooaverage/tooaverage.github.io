@@ -1,0 +1,95 @@
+:root {
+    --pink: #d69aee;
+    --ink: #37233f;
+    --muted: #675b6b;
+    --line: #e9ddec;
+}
+body.variation { color: var(--muted); padding: 1.5rem 2rem 4rem; }
+.variation-nav { display: flex; justify-content: center; flex-wrap: wrap; gap: .5rem; margin-bottom: 3.5rem; }
+.variation-nav a { padding: .5rem 1rem; border: 1px solid var(--line); border-radius: 2rem; font-size: .875rem; color: var(--ink); }
+.variation-nav a[aria-current] { background: var(--ink); border-color: var(--ink); color: white; }
+.variation .container { max-width: 760px; padding-top: 0; }
+.variation .profile-header { gap: 1.75rem; margin-bottom: 1.75rem; }
+.variation .profile-image { width: 150px; height: 150px; }
+.variation .profile-title h1 { font-size: clamp(2.2rem, 5vw, 3.3rem); color: var(--ink); line-height: 1.12; letter-spacing: -.035em; }
+.variation .profile-title strong { display: block; font-weight: 650; }
+.variation .bio { max-width: 660px; font-size: 1.125rem; color: var(--ink); margin-bottom: 4rem; }
+.variation .bio p + p { color: var(--muted); font-size: 1rem; }
+.variation .intro-links { font-size: 1rem; margin-top: 1.1rem; }
+.variation .intro-links a { color: #773490; text-decoration-color: var(--pink); }
+.variation .section { margin-bottom: 4rem; }
+.variation .section-title { color: var(--ink); font-size: 1.45rem; font-weight: 600; letter-spacing: -.02em; margin-bottom: 1.75rem; }
+.variation .products > .section-title { display: flex; align-items: center; gap: .75rem; }
+.variation .products > .section-title::after { content: ''; width: 32px; height: 32px; background: url('assets/Flower.png') center / contain no-repeat; }
+.variation .product h3 { font-size: 1.35rem; color: var(--ink); line-height: 1.3; }
+.variation .product h3 a { text-decoration: none; }
+.variation .product h3 a:hover { text-decoration: underline; text-underline-offset: .2em; }
+.variation .product p { color: var(--muted); line-height: 1.65; }
+.variation .product-heading { gap: .6rem 1rem; margin-bottom: .6rem; }
+.variation .stage { display: inline-block; font-size: .875rem; font-weight: 550; padding: .2rem .7rem; border: 0; color: #50330b; background: #ffdf83; border-radius: .35rem; transform: rotate(-2deg); }
+.variation .stage-recap, .variation .stage-dance { background: #d5efcb; color: #26522d; border-radius: 2rem; transform: rotate(2deg); }
+.variation .stage-map { background: #c7eaf7; color: #21556a; border-radius: .25rem 1rem 1rem .25rem; transform: rotate(-1deg); }
+.variation .stage-agents { background: #f3d1f4; color: #71367c; border: 1px dashed #a65fb6; transform: rotate(2deg); }
+.variation .stage-ship { background: #fbd8c9; color: #823e2e; border-radius: .9rem .3rem .9rem .3rem; transform: rotate(-2deg); }
+.variation .past-role { background: #f8eafa; border-radius: 1rem; padding: 1.4rem; gap: 1rem; }
+.variation .past-role h3 { font-size: 1.2rem; color: var(--ink); }
+.variation .role-note { color: #735079; }
+.variation .speaking-title { font-size: 1rem; margin-top: 2rem; margin-bottom: 1.1rem; }
+.variation .content-description { font-weight: 500; color: var(--ink); }
+.variation .content-title { color: var(--muted); }
+.pink .products { position: relative; }
+.pink .product { padding: 1.65rem 0; border-bottom: 1px solid var(--line); }
+.pink .product:first-child { padding-top: 0; }
+.pink .product + .product { margin-top: 0; }
+.pink .product:last-child { border-bottom: 0; }
+.pink .product p { max-width: 610px; }
+.pink .product-heading { justify-content: space-between; }
+.pink .product-bread h3 { color: #854606; }
+.pink .product-recap h3 { color: #773490; }
+.pink .product-map h3 { color: #246078; }
+.pink .product-dance h3 { color: #a23768; }
+.pink .product-agents h3 { color: #773490; }
+.pink .product-ship h3 { color: #94543c; }
+.cards .container { max-width: 1000px; }
+.cards .profile-header, .cards .bio { max-width: 710px; margin-left: auto; margin-right: auto; }
+.cards .product-list { display: grid; grid-template-columns: 1fr 1fr; gap: 1.3rem; align-items: stretch; }
+.cards .product { position: relative; display: flex; flex-direction: column; padding: 1.6rem; border-radius: 1.2rem; background: #f6edf9; margin: 0; min-width: 0; }
+.cards .product-heading { display: flex; flex-direction: column-reverse; align-items: flex-start; gap: 1rem; }
+.cards .product h3 { font-size: 1.65rem; }
+.cards .product p { color: #514557; }
+.cards .product-bread { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1.1fr; column-gap: 2rem; align-content: center; background: #fff2cc; }
+.cards .product-bread .product-heading { grid-column: 1; }
+.cards .product-bread > p { grid-column: 1; }
+.cards .project-visual { display: block; margin: 1.4rem -1.6rem -1.6rem; overflow: hidden; border-radius: 0 0 1.2rem 1.2rem; }
+.cards .project-visual img { display: block; width: 100%; height: auto; transition: transform .25s ease-out; }
+.cards .project-visual:hover img { transform: scale(1.025); }
+.cards .product-bread .project-visual { grid-column: 2; grid-row: 1 / 3; margin: 0; border-radius: .6rem; align-self: center; }
+.cards .product-map { background: #e2f3f8; grid-row: span 2; }
+.cards .product-map .project-visual { margin-top: auto; padding-top: 1.5rem; }
+.cards .product-map .project-visual img { aspect-ratio: 1.5; object-fit: cover; }
+.cards .product-dance { background: #fbe4ee; }
+.cards .product-agents { background: white; border: 1px dashed #b686c4; }
+.cards .product-ship { background: #fff0e9; }
+.cards main > .section:not(.products) { max-width: 710px; margin-left: auto; margin-right: auto; }
+@media (max-width: 640px) {
+    body.variation { padding: 1rem 1.2rem 3rem; }
+    .variation-nav { margin-bottom: 2.5rem; }
+    .variation .profile-header { flex-direction: row; text-align: left; gap: 1.15rem; }
+    .variation .profile-image { width: 100px; height: 100px; }
+    .variation .bio { font-size: 1rem; margin-bottom: 3rem; }
+    .variation .product h3 { font-size: 1.25rem; }
+    .pink .product-heading { justify-content: flex-start; }
+    .cards .product-list { grid-template-columns: 1fr; }
+    .cards .product-bread { display: flex; grid-column: auto; }
+    .cards .product-bread .project-visual { margin-top: 1.2rem; }
+    .cards .product-map { grid-row: auto; }
+    .cards .product-map .project-visual { margin-top: 0; }
+    .variation .past-role { padding: 1rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .cards .project-visual img { transition: none; }
+    .cards .project-visual:hover img { transform: none; }
+}
+
+.variation .stage-failed { background: #e8cbd2; color: #703d4a; }
+.cards .product-trades { background: #f2e8e9; border-color: #dfcdd0; }

@@ -7,7 +7,7 @@
 body {
     font-family: 'Bricolage Grotesque', sans-serif;
     line-height: 1.6;
-    color: #767676;
+    color: #707070;
     padding: 2rem;
 }
 
@@ -61,9 +61,101 @@ a:focus {
 
 .bio {
     margin-bottom: 2.5rem;
-    color: #767676;
+    color: #707070;
     font-size: 16px;
 }
+
+.bio p + p {
+    margin-top: 1rem;
+}
+
+h1, h2, h3 {
+    text-wrap: balance;
+}
+
+.bio p, .product p {
+    text-wrap: pretty;
+}
+
+.intro-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: .25rem .6rem;
+    margin-top: 1.25rem;
+    color: #1E1E21;
+}
+
+.intro-links a, .product h3 a {
+    text-decoration: underline;
+    text-decoration-color: #b3b3b3;
+    text-underline-offset: .2em;
+    text-decoration-thickness: 1px;
+}
+
+.intro-links a:hover, .product h3 a:hover {
+    text-decoration-color: currentColor;
+}
+
+a:focus-visible {
+    outline: 2px dashed #1E1E21;
+    outline-offset: 4px;
+}
+
+.products {
+    scroll-margin-top: 2rem;
+}
+
+.product-list {
+    list-style: none;
+}
+
+.product + .product {
+    margin-top: 1.5rem;
+}
+
+.product-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: .35rem .75rem;
+    margin-bottom: .35rem;
+}
+
+.product h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1E1E21;
+}
+
+.product p {
+    color: #1E1E21;
+}
+
+.stage {
+    padding: .05rem .4rem;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    color: #666;
+    font-size: .875rem;
+    line-height: 1.5;
+}
+
+.speaking-title {
+    margin-top: 1.75rem;
+}
+
+.past-role {
+    display: flex;
+    align-items: flex-start;
+    gap: .75rem;
+    margin: 0 0 2rem;
+    color: #1E1E21;
+}
+
+.past-role h3 { font-size: 1.1rem; }
+.past-role img { margin-top: .2rem; }
+.role-note { margin-top: .4rem; color: #666; }
 
 .section {
     margin-bottom: 2.5rem;
@@ -96,7 +188,7 @@ a:focus {
 
 .content-title {
     font-weight: 400;
-    color: #767676;
+    color: #707070;
 }
 
 .content-description {
@@ -125,3 +217,5 @@ a:focus {
         align-items: flex-start;
     }
 }
+
+.stage.stage-failed { background: #e8cbd2; color: #703d4a; border-color: #d9b5c0; }

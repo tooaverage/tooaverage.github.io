@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaycee Day - Staff Product Designer</title>
+    <title>Jaycee Day, product designer, ex-GitHub</title>
+    <meta name="description" content="Ex-GitHub staff designer shipping her own products with Claude Code: a Mac invoicing app, a Figma plugin, a Chrome extension, a travel map. Plus older design work and talks.">
+    <meta property="og:title" content="Jaycee Day, product designer, ex-GitHub">
+    <meta property="og:description" content="Ex-GitHub staff designer shipping her own products with Claude Code: a Mac invoicing app, a Figma plugin, a Chrome extension, a travel map. Plus older design work and talks.">
     <link rel="icon" href="assets/Flower.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,35 +21,48 @@
             outline: 2px dashed #000; /* Ensure focus is visible */
         }
     </style>
+    <link rel="stylesheet" href="variations.css">
+<link rel="stylesheet" href="motion.css">
+<link rel="stylesheet" href="next.css">
+<link rel="stylesheet" href="refinements.css">
+<link rel="stylesheet" href="favourites.css">
+<link rel="canonical" href="https://jayceeday.com/">
+<meta property="og:url" content="https://jayceeday.com/">
 </head>
-<body>
+<body class="variation next playroom flowers-off"><a class="skip-link" href="#main-content">Skip to content</a>
     <div class="container">
         <header class="profile-header">
-            <img src="assets/FlowerJay.png" alt="Profile picture of Jaycee Day" class="profile-image">
+            <img src="assets/FlowerJay.png" alt="Profile picture of Jaycee Day" class="profile-image" width="271" height="273">
             <div class="profile-title">
-                <h1>Hey, I'm <strong>Jaycee Day</strong></h1>
-                <p>Staff Product Designer at GitHub</p>
+                <h1>I’m <strong>Jaycee.</strong><span class="headline-rest">Welcome to Jaycee Day Labs.</span></h1><p class="labs-note">I love building (too many) things.</p>
             </div>
         </header>
 
-        <main>
-            <p class="bio">
-                Hi, I'm Jaycee! As a designer with 11+ years experience, I love crafting solutions that benefit the user and the business. 
-                I get excited about growth, designing end to end solutions, and working on strategy. 
-            </p>
+        <main id="main-content">
+            <div class="bio">
+                <p>Ex-GitHub staff designer, ex config-speaker, now shipping a bunch of little products. A Mac app that writes your invoices, a Figma plugin, a Chrome extension, a travel map, a dance calendar.</p>
+            </div>
 
-            <section class="section">
-                <h2 class="section-title">Case studies</h2>
-                <div class="case-study">
-                    <img src="assets/github-icon.png" alt="GitHub Icon" class="icon-img">
-                    <div>
-                        <p class="content-title">GitHub</p>
-                        <p class="content-description">(Case study on Enterprise and Copilot coming soon)</p>
-                    </div>
+            <section class="section products" id="building" aria-labelledby="building-title">
+                <h2 class="section-title" id="building-title">What I'm building</h2>
+                <ul class="project-list"><li class="project linked-card project-bread has-media"><div class="bread-copy"><div class="project-top"><span class="stage stage-bread">First users wanted</span><h3><a class="card-destination" href="https://getthybread.com/">Get Thy Bread<span class="out-arrow" aria-hidden="true">↗</span></a></h3></div><p class="simple-description">Reads your Claude Code, Codex, and Cursor sessions, asks you once a day what you actually did, and drafts the invoice at month end.</p></div><div class="media-frame"><img src="assets/bread-preview.webp" alt="Get Thy Bread daily review and invoice" loading="lazy" width="2338" height="1616"></div></li><li class="project linked-card project-recap has-media"><div class="project-top"><span class="stage stage-recap">Shipped!</span><h3><a class="card-destination" href="https://www.figma.com/community/plugin/1602120336688835924/design-recap-generated-changelogs-weekly-reports-status-updates">Design Recap<span class="out-arrow" aria-hidden="true">↗</span></a></h3></div><div class="media-frame"><img src="assets/recap-preview.png" alt="Design Recap Figma plugin showing a work report" loading="lazy" width="1920" height="1080"></div><p class="simple-description">Creates a ready-to-share report from your Figma version history and comments, so you can explain what changed without writing it all up yourself.</p></li><li class="project linked-card project-map has-media"><div class="project-top"><span class="stage stage-map">Shipped · beta</span><h3><a class="card-destination" href="https://gowhereandwhen.com/">Go Where and When<span class="out-arrow" aria-hidden="true">↗</span></a></h3></div><div class="media-frame"><video controls playsinline muted preload="metadata" poster="assets/gowhere-demo-poster.jpg" aria-label="Go Where and When demo"><source src="assets/gowhere-demo.mp4" type="video/mp4">Your browser cannot play this video. <a href="assets/gowhere-demo.mp4">Watch the demo</a></video><a class="demo-source" href="https://x.com/tooaverage/status/2096342697833287935" target="_blank" rel="noopener noreferrer">See the project on X ↗</a></div><p class="simple-description">A world map that tells you when to go, not just where. Every country scored by month.</p></li><li class="project linked-card project-dance has-media"><div class="project-top"><span class="stage stage-dance">Shipped!</span><h3><a class="card-destination" href="https://vancouverdanceevents.com/calendar">Vancouver Dance Events<span class="out-arrow" aria-hidden="true">↗</span></a></h3></div><p class="simple-description">Salsa, bachata and other dance nights around Vancouver, in one calendar.</p><div class="dance-visual"><img src="assets/dance-events-close.png" alt="Vancouver calendar showing upcoming salsa and bachata events" loading="lazy" width="1280" height="720"></div></li><li class="project linked-card project-foldout text-project"><div class="project-top"><span class="stage stage-foldout">Shipped</span><h3><a class="card-destination" href="https://tooaverage.github.io/foldout/">Foldout<span class="out-arrow" aria-hidden="true">↗</span></a></h3></div><p class="simple-description">Full-page scrolling screenshots in Chrome, free, nothing leaves your browser.</p></li><li class="project linked-card project-moving has-media"><div class="project-top"><span class="stage stage-moving">Shipped!</span><h3><a class="card-destination" href="https://movingtovancouver.ca/">Moving to Vancouver<span class="out-arrow" aria-hidden="true">↗</span></a></h3></div><div class="media-frame"><img src="assets/moving-preview.png" alt="Moving to Vancouver checklist homepage with a mountain scene" loading="lazy" width="2040" height="906"></div><p class="simple-description">Everything on moving to BC, visa, job, housing, healthcare, as one checklist.</p></li><li class="project project-agents text-project dating-vote-card"><div class="project-top"><span class="stage stage-agents">Still building</span><h3>Tinder for cloud agents</h3></div><p class="simple-description">Compare design changes from cloud agents. Approve, reject, or ask for another go.</p><div class="dating-actions" role="group" aria-label="What do you think of Tinder for cloud agents?">
+<button type="button" class="dating-pass" data-vote="pass" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg><span>Pass</span></button>
+<button type="button" class="dating-like" data-vote="like" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg><span>Like</span></button>
+</div></li><li class="project project-ship text-project"><div class="project-top"><span class="stage stage-ship">Using it myself</span><h3>Ship-it</h3></div><p class="simple-description">Put your website online and share a working preview, so other people can try it and give you feedback.</p></li><li class="project linked-card project-trades text-project"><div class="project-top"><span class="stage stage-failed">Failed</span><h3><a class="card-destination" href="https://tradescodebook.com/">Trades Codebook</a></h3></div><p class="simple-description">Look up BC plumbing code questions and find the relevant code section.</p></li>
+</ul>
+            </section>
+
+            <section class="section" aria-labelledby="before-title">
+                <h2 class="section-title" id="before-title">Before this</h2>
+                <div class="past-role">
+                    <img src="assets/github-icon.png" alt="" width="28" height="28">
+                    <div><h3>GitHub / Microsoft</h3>
+                    <p>Previously a Staff Product Designer at GitHub.</p>
+                    <p class="role-note">These days, I’m building my own products.</p></div>
                 </div>
                 <div class="case-study">
                     <a href="https://medium.com/ux-planet/how-solving-our-biggest-customer-complaint-at-blinkist-led-to-a-23-increase-in-conversion-b60ad514134b?sk=c97da11b8a276d98769212dc41462e6a" target="_blank" aria-label="Blinkist case study">
-                        <img src="assets/blinkist-icon.png" alt="Blinkist Icon" class="icon-img">
+                        <img src="assets/blinkist-icon.png" alt="Blinkist Icon" class="icon-img" width="194" height="186">
                     </a>
                     <div>
                         <p class="content-title"><a href="https://medium.com/ux-planet/how-solving-our-biggest-customer-complaint-at-blinkist-led-to-a-23-increase-in-conversion-b60ad514134b?sk=c97da11b8a276d98769212dc41462e6a" target="_blank">Blinkist</a></p>
@@ -55,20 +71,17 @@
                 </div>
                 <div class="case-study">
                     <a href="https://chatbotsmagazine.com/how-we-got-a-98-success-rate-for-our-bot-for-zalando-a-ux-case-study-fcdc0e70469d" target="_blank" aria-label="Zalando case study">
-                        <img src="assets/zalando-icon.png" alt="Zalando Icon" class="icon-img">
+                        <img src="assets/zalando-icon.png" alt="Zalando Icon" class="icon-img" width="163" height="166">
                     </a>
                     <div>
                         <p class="content-title"><a href="https://chatbotsmagazine.com/how-we-got-a-98-success-rate-for-our-bot-for-zalando-a-ux-case-study-fcdc0e70469d" target="_blank">Zalando</a></p>
                         <p class="content-description"><a href="https://chatbotsmagazine.com/how-we-got-a-98-success-rate-for-our-bot-for-zalando-a-ux-case-study-fcdc0e70469d" target="_blank">How we got a 98% Success Rate for our AI Assistant for Zalando</a></p>
                     </div>
                 </div>
-            </section>
-
-            <section class="section">
-                <h2 class="section-title">Speaking and Podcasts</h2>
+                <h3 class="section-title speaking-title">Speaking and podcasts</h3>
                 <div class="content-item">
                     <a href="https://www.youtube.com/watch?v=mDPrFM3439s" target="_blank" aria-label="Figma Config Conference">
-                        <img src="assets/figma-icon.png" alt="Figma Icon" class="icon-img">
+                        <img src="assets/figma-icon.png" alt="Figma Icon" class="icon-img" width="128" height="192">
                     </a>
                     <div>
                         <p class="content-title"><a href="https://www.youtube.com/watch?v=mDPrFM3439s" target="_blank">Figma Config Conference</a></p>
@@ -77,7 +90,7 @@
                 </div>
                 <div class="content-item">
                     <a href="https://www.itshipped.fm/episodes/5" target="_blank" aria-label="It Shipped That Way Podcast">
-                        <img src="assets/shipped-icon.png" alt="It Shipped That Way Icon" class="icon-img">
+                        <img src="assets/shipped-icon.png" alt="It Shipped That Way Icon" class="icon-img" width="170" height="174">
                     </a>
                     <div>
                         <p class="content-title"><a href="https://www.itshipped.fm/episodes/5" target="_blank">It Shipped That Way Podcast</a></p>
@@ -90,7 +103,7 @@
                 <h2 class="section-title">My subscription screen pattern ™</h2>
                 <div class="content-item">
                     <a href="https://x.com/tooaverage/status/1531253612910981120" target="_blank" aria-label="Apple subscription screen pattern">
-                        <img src="assets/apple-icon.png" alt="Apple Icon" class="icon-img" id="apple-icon">
+                        <img src="assets/apple-icon.png" alt="Apple Icon" class="icon-img" id="apple-icon" width="179" height="220">
                     </a>
                     <div>
                         <p class="content-title"><a href="https://x.com/tooaverage/status/1531253612910981120" target="_blank">Apple</a></p>
@@ -99,7 +112,7 @@
                 </div>
                 <div class="content-item">
                     <a href="https://youtu.be/4OrzjJ4dTMw?si=qkrT1DFxOFqrAw6f&t=125" target="_blank" aria-label="Google subscription screen pattern">
-                        <img src="assets/google-icon.png" alt="Google Icon" class="icon-img">
+                        <img src="assets/google-icon.png" alt="Google Icon" class="icon-img" width="210" height="209">
                     </a>
                     <div>
                         <p class="content-title"><a href="https://youtu.be/4OrzjJ4dTMw?si=qkrT1DFxOFqrAw6f&t=125" target="_blank">Google</a></p>
@@ -113,11 +126,6 @@
                 <div class="content-item">
                     <div>
                         <p class="content-description"><a href="https://www.figma.com/community/plugin/934505788375924322/count-things" target="_blank">Count Things Figma Plugin</a></p>
-                    </div>
-                </div>
-                <div class="content-item">
-                    <div>
-                        <p class="content-description"><a href="https://movingtovancouver.ca/" target="_blank">Moving to Vancouver</a></p>
                     </div>
                 </div>
             </section>
@@ -151,5 +159,7 @@
             </section>
         </main>
     </div>
+<dialog class="image-dialog" aria-label="Product preview"><button class="close-preview" aria-label="Close preview">Close ×</button><img alt=""><p></p></dialog><script src="next.js"></script><div class="falling-flowers" aria-hidden="true"><img src="assets/Flower.png" alt="" style="--left:5%;--delay:-0s;--duration:22s" width="271" height="272"><img src="assets/Flower.png" alt="" style="--left:27%;--delay:-4s;--duration:25s" width="271" height="272"><img src="assets/Flower.png" alt="" style="--left:74%;--delay:-8s;--duration:28s" width="271" height="272"><img src="assets/Flower.png" alt="" style="--left:94%;--delay:-12s;--duration:31s" width="271" height="272"></div><button class="flower-toggle" aria-pressed="false">Flowers off</button><script src="flowers.js"></script><script src="card-layout.js"></script>
+<script src="dating-card.js"></script>
 </body>
 </html>
