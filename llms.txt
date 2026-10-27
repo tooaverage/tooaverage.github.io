@@ -1,10 +1,14 @@
 # Jaycee Day
 
-> Product designer. Formerly Staff Product Designer at GitHub (Microsoft). Now designs, builds and ships her own products at Too Average Tools (https://tooaveragetools.com/). Contact: hi@jayceeday.com.
+> Product designer. Formerly Staff Product Designer at GitHub (Microsoft). Now builds her own products at Too Average Tools (https://tooaveragetools.com/) and runs Vancouver Design Leaders, a meetup for senior designers. Contact: hi@jayceeday.com.
 
 ## Products
 
 - [Too Average Tools](https://tooaveragetools.com/): every product Jaycee has built, including Get Thy Bread, Design Recap, STFU, Go Where and When and Foldout.
+
+## Community
+
+- [Vancouver Design Leaders](https://www.linkedin.com/feed/update/urn:li:activity:7520903362758819840/): a meetup Jaycee founded and runs for senior designers, design managers and heads of design in Vancouver, BC, mostly people working with AI agents. Small group, no talks. 22 designers came to the first one on October 14, 2026, and more are planned.
 
 ## Case studies
 
