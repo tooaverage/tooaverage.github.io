@@ -1,0 +1,27 @@
+# Jaycee Day
+
+> Product designer. Formerly Staff Product Designer at GitHub (Microsoft). Now designs, builds and ships her own products at Too Average Tools (https://tooaveragetools.com/). Contact: hi@jayceeday.com.
+
+## Products
+
+- [Too Average Tools](https://tooaveragetools.com/): every product Jaycee has built, including Get Thy Bread, Design Recap, STFU, Go Where and When and Foldout.
+
+## Case studies
+
+- [Blinkist: how solving our biggest customer complaint led to a 23% increase in conversion](https://medium.com/ux-planet/how-solving-our-biggest-customer-complaint-at-blinkist-led-to-a-23-increase-in-conversion-b60ad514134b)
+- [Zalando: how we got a 98% success rate for our AI assistant](https://chatbotsmagazine.com/how-we-got-a-98-success-rate-for-our-bot-for-zalando-a-ux-case-study-fcdc0e70469d)
+
+## Talks and podcasts
+
+- [Figma Config: Transparency Always Wins, how ethical design led to 23% growth](https://www.youtube.com/watch?v=mDPrFM3439s)
+- [It Shipped That Way podcast: Making Billions with Ethical Onboarding](https://www.itshipped.fm/episodes/5)
+
+## Recognition
+
+- Apple and Google both adopted Jaycee's subscription screen pattern.
+
+## Links
+
+- [LinkedIn](https://www.linkedin.com/in/jayceeannday/)
+- [@tooaverage on X](https://x.com/tooaverage)
+- [GitHub](https://github.com/tooaverage)

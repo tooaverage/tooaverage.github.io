@@ -134,3 +134,12 @@
 .playroom .past-role h3 { color:#4e2d49; }
 .playroom .past-role .role-note { color:#75536f; }
 @media(max-width:640px) { .playroom > .container { padding-top:1.5rem; } }
+
+/* Links inside running text need a visible cue. */
+.bio-link, .past-role .role-note a { text-decoration: underline; text-underline-offset: 3px; }
+
+/* White page. */
+body.playroom { background:#fff; }
+/* One card: keep it on the same centred column as the sections below. */
+.playroom main > .section.products { max-width:800px; margin-left:auto; margin-right:auto; }
+.playroom .products .project-list { grid-template-columns:1fr; }
